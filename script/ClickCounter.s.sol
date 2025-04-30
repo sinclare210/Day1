@@ -5,14 +5,12 @@ import {Script, console} from "forge-std/Script.sol";
 
 import {ClickCounter} from "../src/ClickCounter.sol";
 
-contract ClickCounterScript is Script{
+contract ClickCounterScript is Script {
     ClickCounter public clickCounter;
 
-    function setUp() public{
+    function setUp() public {}
 
-    }
-
-    function run () public{
+    function run() public {
         //okay
         vm.startBroadcast();
 

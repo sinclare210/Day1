@@ -8,27 +8,25 @@ contract ClickCounterTest is Test {
     uint256 counter;
     ClickCounter clickCounter;
 
-    function setUp () public {
+    function setUp() public {
         clickCounter = new ClickCounter();
     }
 
     function testIfNumberIncrease() public {
         clickCounter.increaseCounter();
-        assertEq(clickCounter.counter(),1);
+        assertEq(clickCounter.counter(), 1);
     }
 
     function testIfNumberDecrease() public {
         clickCounter.increaseCounter();
         clickCounter.decreaseCounter();
-        assertEq(clickCounter.counter(),0);
+        assertEq(clickCounter.counter(), 0);
     }
 
     function testIfNumberReset() public {
         clickCounter.reset();
-        assertEq(clickCounter.counter(),0);
+        assertEq(clickCounter.counter(), 0);
     }
-
-    
 
     function testMultipleIncrements() public {
         clickCounter.increaseCounter();
@@ -64,6 +62,4 @@ contract ClickCounterTest is Test {
         }
         assertEq(clickCounter.counter(), times);
     }
-
-
 }

@@ -2,17 +2,17 @@
 pragma solidity ^0.8.19;
 
 contract ClickCounter {
-   uint256 public counter;
+    uint256 public counter;
 
-   function increaseCounter () public {
+    function increaseCounter() public {
         counter = counter + 1;
-   } 
+    }
 
-   function decreaseCounter () public {
+    function decreaseCounter() public {
         counter--;
-   }
+    }
 
-   function reset () public {
+    function reset() public {
         counter = 0;
-   }
+    }
 }

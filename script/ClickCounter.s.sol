@@ -13,7 +13,7 @@ contract ClickCounterScript is Script{
     }
 
     function run () public{
-        
+        //okay
         vm.startBroadcast();
 
         clickCounter = new ClickCounter();
